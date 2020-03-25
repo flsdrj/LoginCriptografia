@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation Layer", "1 - Presentation Layer", "{074078A4-FE45-4A28-BEFF-3D8D6BF2A80B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Repositories Layer", "2 - Repositories Layer", "{1107464C-6885-4525-B424-A778B22AD9D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - CrossCutting", "3 - CrossCutting", "{84183BFE-A6BE-464F-BAD7-EBDB66AC8058}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.Presentation", "Projeto.Presentation\Projeto.Presentation.csproj", "{5927F647-F702-49E5-B789-F24479D0EC37}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.Data", "Projeto.Data\Projeto.Data.csproj", "{91920FC8-5B56-4524-81D8-9469355F983C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.CrossCutting.Criptography", "Projeto.CrossCutting.Criptography\Projeto.CrossCutting.Criptography.csproj", "{31C14957-B724-4E03-8124-299A9CB61510}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.CrossCutting.Mail", "Projeto.CrossCutting.Mail\Projeto.CrossCutting.Mail.csproj", "{4E43417E-CF5F-49B2-9194-2D0B7236DEFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5927F647-F702-49E5-B789-F24479D0EC37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5927F647-F702-49E5-B789-F24479D0EC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5927F647-F702-49E5-B789-F24479D0EC37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5927F647-F702-49E5-B789-F24479D0EC37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91920FC8-5B56-4524-81D8-9469355F983C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91920FC8-5B56-4524-81D8-9469355F983C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91920FC8-5B56-4524-81D8-9469355F983C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91920FC8-5B56-4524-81D8-9469355F983C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31C14957-B724-4E03-8124-299A9CB61510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31C14957-B724-4E03-8124-299A9CB61510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31C14957-B724-4E03-8124-299A9CB61510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31C14957-B724-4E03-8124-299A9CB61510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E43417E-CF5F-49B2-9194-2D0B7236DEFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E43417E-CF5F-49B2-9194-2D0B7236DEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E43417E-CF5F-49B2-9194-2D0B7236DEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E43417E-CF5F-49B2-9194-2D0B7236DEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5927F647-F702-49E5-B789-F24479D0EC37} = {074078A4-FE45-4A28-BEFF-3D8D6BF2A80B}
+		{91920FC8-5B56-4524-81D8-9469355F983C} = {1107464C-6885-4525-B424-A778B22AD9D9}
+		{31C14957-B724-4E03-8124-299A9CB61510} = {84183BFE-A6BE-464F-BAD7-EBDB66AC8058}
+		{4E43417E-CF5F-49B2-9194-2D0B7236DEFE} = {84183BFE-A6BE-464F-BAD7-EBDB66AC8058}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F25DBD85-FC47-4B1E-B83B-6C1F8915175C}
+	EndGlobalSection
+EndGlobal

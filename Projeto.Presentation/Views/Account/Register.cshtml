@@ -1,0 +1,63 @@
+﻿@model Projeto.Presentation.Models.CriarUsuarioModel
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>Criar conta de Usuário</h2>
+<a href="/Home/Index" class="btn btn-danger">Voltar</a>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+
+        @using (Html.BeginForm())
+        {
+            <label>Nome do Usuario</label>
+            @Html.TextBoxFor(model => model.Nome,
+           new { @class = "form-control", placeholder = "Digite aqui" })
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.Nome)
+            </span>
+            <br />
+
+            <label>Email do Usuario</label>
+            @Html.TextBoxFor(model => model.Email,
+           new { @class = "form-control", placeholder = "Digite aqui" })
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.Email)
+            </span>
+            <br />
+
+            <label>Senha do Usuario</label>
+            @Html.PasswordFor(model => model.Senha,
+           new { @class = "form-control", placeholder = "Digite aqui" })
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.Senha)
+            </span>
+            <br />
+
+            <label>Confirmacao de Senha</label>
+            @Html.PasswordFor(model => model.SenhaConfirmacao,
+           new { @class = "form-control", placeholder = "Digite aqui" })
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.SenhaConfirmacao)
+            </span>
+            <br />
+
+            <label>Selecione seu Perfil</label>
+            @Html.DropDownListFor(model => model.IdPerfil, 
+                                  Model.ListagemPerfis,
+                                  "Escolha uma opção", 
+                                  new {@class = "form-control"})
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.IdPerfil)
+            </span>
+            <br />
+
+            <input type="submit" value="Cadastrar Usuário" class="btn btn-success" />
+        }
+
+        <strong> @TempData["Mensagem"]</strong>
+
+    </div>
+</div>

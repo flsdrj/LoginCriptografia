@@ -1,0 +1,18 @@
+﻿@model Projeto.Data.Entities.Usuario
+
+@{
+    ViewData["Title"] = "MinhaConta";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>Minha Conta</h2>
+<a href="/AreaRestrita/Index">Voltar</a>
+<hr />
+<h4>@Model.Nome</h4>
+Email: <span>@Model.Email</span>
+<br/>
+<br/>
+
+Perfil de Acesso: <strong>@Model.Perfil.Nome</strong>
+<br/>
+Data de Cadastro: <span>@Model.DataCriacao.ToString("dd/MM/yyy")</span>

@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Coti Informática</title>
+
+    <link href="~/bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="card card-body bg-dark text-white">
+
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Sistema de Controle de Usuários</h2>
+                    <p> Projeto desenvolvido em .Net CORE MVC com Dapper </p>
+                </div>
+                <div class="col-md-4">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <span>Usuario autenticado:</span>
+                        <br />
+                        <strong>@User.Identity.Name</strong>
+
+                        <div style="margin-top: 10px;">
+                            <a href="/Account/Logout" class="btn btn-danger btn-sm"
+                               onclick="return confirm('Deseja realmente sair do sistema?');">
+                                Sair do Sistema
+                            </a>
+                        </div>
+
+                    }
+
+                </div>
+            </div>
+        </div>
+
+        <br />
+        @RenderBody()
+    </div>
+
+</body>
+</html>
